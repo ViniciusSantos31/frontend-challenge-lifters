@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# <img width="30" src="./public/logo.svg"> Lifters Shop 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desenvolvi a aplicação utilizando ReactJS e integrei o Bootstrap para estilização consistente dos componentes. Para facilitar a construção e evitar repetição de código, utilizei React Bootstrap, que oferece componentes pré-construídos e integrados com React.
 
-Currently, two official plugins are available:
+## 📄 Estrutura da Aplicação
+Optei por uma estrutura simples que suportasse todas as funcionalidades da aplicação de forma organizada e eficiente. A escolha por ReactJS permitiu um desenvolvimento ágil e modular, enquanto o uso de React Bootstrap facilitou a criação de interfaces com componentes reutilizáveis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Utilização do Bootstrap para Estilização
+Bootstrap foi essencial para garantir uma interface visualmente atraente e responsiva. Através de suas classes CSS, pude aplicar estilos consistentes em toda a aplicação.
 
-## Expanding the ESLint configuration
+## ♻️ Componentização e Reutilização de Código
+A abordagem de componentização no React foi fundamental para evitar repetições e manter o código limpo e modular. Com React Bootstrap, pude incorporar componentes como Button e Cards de forma coesa e padronizada, garantindo uma experiência de usuário uniforme em toda a aplicação.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 💻 Tecnologias utilizadas 
 
-- Configure the top-level `parserOptions` property like this:
+Esse projeto utiliza as seguintes tecnologias:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React
+- TypeScript
+- Vite
+- Bootstrap 
+- React Bootstrap
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ⚙️ Versões 
+
+- React: ^18.3.0
+- Node: 20.15.0
+
+## 🚀 Funcionalidades 
+
+- Lista de produtos
+- Detalhes do produto
+- Adicionar item ao carrinho
+- Remover item do carrinho
+- Filtros por categoria e cor
+- Carrinho de compras
+- Finalização de compras
+- Validação ao realizar o pedido
+
+# Como executar o projeto
+
+1. Faça o clone do projeto na sua máquina
+   
+   **Via SSH**
+    ```cmd
+    git clone git@github.com:ViniciusSantos31/frontend-challenge-lifters.git
+    ```
+    **Via HTTPS**
+    ```cmd
+    git clone https://github.com/ViniciusSantos31/frontend-challenge-lifters.git
+    ```
+
+3. Instale as dependências
+   
+   ```cmd
+   yarn install
+   ```
+
+4. Execute o projeto com o comando abaixo
+
+   ```cmd
+   yarn dev
+   ```
+
