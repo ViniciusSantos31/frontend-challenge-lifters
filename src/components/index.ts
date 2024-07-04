@@ -4,4 +4,8 @@ export * from "./card-product";
 export * from "./checkbox";
 export * from "./color";
 export * from "./header";
+export * from "./input";
+export * from "./item-checkout";
 export * from "./product-image";
+export * from "./select";
+export * from "./size";

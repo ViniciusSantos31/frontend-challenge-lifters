@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
             <h4 className="fs-6 text-center mb-3">Colors</h4>
             <div className="d-flex flex-wrap align-items-start gap-1">
               {filters.colors.map((color) => (
-                <Color key={color.codigo} color={color.codigo} />
+                <Color key={color.codigo} color={color.codigo} width="25px" />
               ))}
             </div>
           </div>
