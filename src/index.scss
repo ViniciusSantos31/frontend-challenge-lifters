@@ -1,0 +1,154 @@
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/variables";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+* {
+  transition: all 0.2s ease;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#dropdown-item:is(:hover, :focus) {
+  background-color: var(--bs-black);
+}
+
+@include media-breakpoint-up(sm) {
+  .hero {
+    max-width: 29.75rem;
+  }
+}
+
+#add-to-cart:disabled {
+  background-color: #c4c4c4 !important;
+  cursor: default;
+}
+
+.button-size:hover,
+button.button-size.selected {
+  background-color: #010101 !important;
+  color: #ffffff !important;
+}
+
+#colors > button.selected {
+  outline: 2px solid #010101 !important;
+}
+
+.card:hover .card-title {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input.form-control,
+input.form-control:focus-visible,
+select.form-control,
+select.form-control:focus-visible {
+  outline: none;
+  border: 1px solid #718191;
+  background-color: #2a3038;
+  border-radius: 0;
+  padding: 0.8rem 1rem;
+  box-shadow: none;
+  color: #ffffff;
+  position: relative;
+}
+
+input.form-control:focus-visible {
+  border: 1px solid #ffffff;
+}
+
+input.form-control:placeholder {
+  color: #718191;
+}
+
+input.form-control.error,
+select.form-control.error {
+  color: #ff0000 !important;
+  background-color: rgba(237, 64, 64, 0.15) !important;
+  border: 1px solid #ff0000 !important;
+}
+
+select.form-control:focus-visible {
+  border: 1px solid #ffffff;
+}
+
+select.form-control::placeholder {
+  color: #718191;
+}
+
+#dropdown-item:focus {
+  background-color: #010101 !important;
+  color: #ffffff !important;
+}
+
+#dropdown-item:hover {
+  background-color: #010101 !important;
+  color: #ffffff !important;
+}

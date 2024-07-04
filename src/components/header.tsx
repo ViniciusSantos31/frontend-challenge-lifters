@@ -1,7 +1,7 @@
-import { ShoppingBag } from "lucide-react";
 import { Nav, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Button } from "./button";
+import { DropdownBag } from "./checkout-menu";
 
 export const Header: React.FC = () => {
   return (
@@ -31,13 +31,7 @@ export const Header: React.FC = () => {
       </Stack>
       <Stack direction="horizontal" gap={3}>
         <Nav.Item>
-          <Link
-            to="/checkout"
-            className="d-flex align-items-center justify-content-center text-decoration-none text-white gap-1"
-          >
-            <ShoppingBag size={20} />
-            <span className="text-decoration-none">0</span>
-          </Link>
+          <DropdownBag />
         </Nav.Item>
         <Nav.Item>
           <Link to="/home">
