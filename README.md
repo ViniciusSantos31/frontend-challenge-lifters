@@ -1,4 +1,4 @@
-# <img width="30" src="./public/logo.svg"> Lifters Shop 
+# 🛒 Lifters Shop 
 
 Desenvolvi a aplicação utilizando ReactJS e integrei o Bootstrap para estilização consistente dos componentes. Para facilitar a construção e evitar repetição de código, utilizei React Bootstrap, que oferece componentes pré-construídos e integrados com React.
 
